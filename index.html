@@ -744,7 +744,7 @@
 						<div class="col-md-7 col-md-push-1">
 							<div class="row">
 								<div class="col-md-10 col-md-offset-1 col-md-pull-1 animate-box" data-animate-effect="fadeInRight">
-									<form id="googleMail" method="post">
+									<form id="gform" method="POST">
 										<div class="form-group">
 											<input type="text" name="name" class="form-control" placeholder="성함">
 										</div>
@@ -793,13 +793,13 @@
 	<script type="text/javascript">
 
 		function createData() {
-			var sendData = $('#googleMail').serialize();
+			var sendData = $('#gform').serialize();
 			return sendData;
 		}
 		function sendMail(){
 			$.ajax({
 				type : "POST",
-				url : "https://script.google.com/macros/s/AKfycbz-frwBTGvIeei6eC125WczGVfQwFRHrCiw5veAUA/exec",
+				url : "https://script.google.com/macros/s/AKfycbyLffzq7rkvbaJvbhLj-FM9F6g2Toibm36tmXi8cw/exec",
 				data : createData(),
 				datatype:"json",
 				success : function(data, status, xhr){
