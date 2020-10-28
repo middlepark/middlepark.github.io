@@ -733,6 +733,10 @@ body.offcanvas {
   font-family: "Quicksand", Arial, sans-serif;
   margin-bottom: 10px; }
 
+.progress-wrap {
+  margin-bottom: 10px;
+}
+
 .progress {
   height: 6px;
   -webkit-box-shadow: none;
